@@ -1,0 +1,71 @@
+body {
+    background: #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column
+}
+
+main {
+    flex: 1
+}
+
+a:visited {
+    color: #00bc8c
+}
+
+a:link {
+    color: #00bc8c
+}
+
+img {
+    -webkit-user-drag: none
+}
+
+span {
+	vertical-align: sub;
+}
+
+.row {
+	max-width: 33%;
+	width: 100%;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+div.container>div:nth-of-type(odd) {
+  background: #e0e0e0;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+	display: flex;
+}
+
+img.img30 {
+    height: 35px;
+    width: 35px;
+	margin: auto;
+}
+
+img.img40 {
+    height: 40px;
+    width: 40px;
+	margin: auto;
+}
+
+#topBtn {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 10px; /* Place the button at the bottom of the page */
+  right: 15px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  border-radius: 10px; /* Rounded corners */
+  background-color: transparent;
+}
