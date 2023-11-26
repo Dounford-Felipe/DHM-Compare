@@ -1,4 +1,5 @@
 <?php
+header("Access-Control-Allow-Origin: *");
 // Nome de usuário fornecido manualmente
 $username = isset($_GET['user']) ? $_GET['user'] : '';
 

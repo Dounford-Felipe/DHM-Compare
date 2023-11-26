@@ -4,7 +4,7 @@ function compare() {
 	if (player1 !== '') {
 		if (player2 == '') {player2 == 'Placeholder'}
 		document.getElementById('compareButton').disabled=true
-		$.get('data.php', { user: player1 }, function(response) {
+		$.get('https://dhmcompare.000webhostapp.com/index.php', { user: player1 }, function(response) {
 			var data = response.split("~");
 			for(var i = 0; i < data.length; i++) {
 				var itemName = data[i]; i++;
@@ -12,7 +12,7 @@ function compare() {
 				window['p1'+itemName] = itemValue;
 			}
 		});
-		$.get('data.php', { user: player2 }, function(response) {
+		$.get('https://dhmcompare.000webhostapp.com/index.php', { user: player2 }, function(response) {
 			var data = response.split("~");
 			for(var i = 0; i < data.length; i++) {
 				var itemName = data[i]; i++;
