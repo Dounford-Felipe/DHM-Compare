@@ -9,12 +9,16 @@ main {
     flex: 1
 }
 
+a {
+	text-decoration: none;
+}
+
 a:visited {
-    color: #00bc8c
+    color: #000
 }
 
 a:link {
-    color: #00bc8c
+    color: #000
 }
 
 img {
@@ -68,4 +72,16 @@ img.img40 {
   cursor: pointer; /* Add a mouse pointer on hover */
   border-radius: 10px; /* Rounded corners */
   background-color: transparent;
+}
+
+.toTool {
+	border: 1px solid #c5c5c5;
+    background: #f6f6f6;
+    font-weight: normal;
+    color: #454545;
+	padding: .5em 1em;
+    margin-top: 1px;
+    border-radius: 3px 3px 0px 0px;
+    border-bottom: 0;
+	float:right;
 }

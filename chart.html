@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/Dounford-Felipe/DHM-Compare/main/images/favicon.ico">
+<title>DHM STATS</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="css/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+<script src="https://cdn.canvasjs.com/jquery.canvasjs.min.js"></script>
+<script src="js/chart.js"></script>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+
+<div id="tabs" class="tabs">
+	<ul>
+		<li><a href="#tabs-mining">Mining & Crafting</a></li>
+		<li><a href="#tabs-woodcutting">Woodcutting & Brewing</a></li>
+		<li><a href="#tabs-exploring">Exploring</a></li>
+		<li><a href="#tabs-other">Other</a></li>
+	<div class="toTool"><a href="index.html">Compare Tool</a></div>
+	</ul>
+	<div id="tabs-mining">
+		<div id="chartGems" style="height: 300px; max-width: 920px; margin: 10px auto;"></div><br>
+		<div id="chartGeodes" style="height: 300px; max-width: 920px; margin: 10px auto;"></div><br>
+		<div id="chartCoins" style="height: 300px; max-width: 920px; margin: 10px auto;"></div><br>
+		<div id="chartResources" style="height: 300px; max-width: 920px; margin: 10px auto;"></div><br>
+		<div id="chartOres" style="height: 300px; max-width: 920px; margin: 10px auto;"></div><br>
+		<div id="chartBars" style="height: 300px; max-width: 920px; margin: 10px auto;"></div><br>
+	</div>
+	<div id="tabs-woodcutting">
+		<div id="chartWoods" style="height: 360px; max-width: 920px; margin: 10px auto;"></div><br>
+		<div id="chartStripedSeeds" style="height: 360px; max-width: 920px; margin: 10px auto;"></div><br>
+		<div id="chartBrewingMaterials" style="height: 380px; max-width: 920px; margin: 10px auto;"></div><br>
+		<div id="chartStripedLeaves" style="height: 380px; max-width: 920px; margin: 10px auto;"></div><br>
+	</div>
+	<div id="tabs-exploring">
+		<div id="chartEnergy" style="height: 360px; max-width: 920px; margin: 10px auto;"></div><br>
+		<div id="chartFields" style="height: 360px; max-width: 920px; margin: 10px auto;"></div><br>
+		<div id="chartExploring1" style="height: 360px; max-width: 920px; margin: 10px auto;"></div><br>
+		<div id="chartExploring2" style="height: 380px; max-width: 920px; margin: 10px auto;"></div><br>
+	</div>
+	<div id="tabs-other">
+		<div id="chartChests" style="height: 360px; max-width: 920px; margin: 10px auto;"></div><br>
+		<div id="chartBlueOrbs" style="height: 360px; max-width: 920px; margin: 10px auto;"></div><br>
+		<div id="chartGreenOrbs" style="height: 360px; max-width: 920px; margin: 10px auto;"></div><br>
+		<div id="chartEnchanters" style="height: 380px; max-width: 920px; margin: 10px auto;"></div><br>
+	</div>
+</div>
+</body>
+</html>
