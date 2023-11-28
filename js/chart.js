@@ -1,12 +1,14 @@
 const groups = {"Gems": ["Sapphire","Emerald","Ruby","Diamond","Blood Diamond"],
   "Geodes": ["Geode 1","Geode 2","Geode 3","Geode 4","Geode 5","Geode 6"],
-  "Ores": ["Promethium","Titanium","Ancient Ore"],
-  "Bars": ["Promethium Bars","Titanium Bars","Ancient Bars","Refined Gold Bars","Refined Promethium Bars"],
+  "Promethium": ["Promethium","Promethium Bars"],
+  "Ores": ["Titanium","Ancient Ore"],
+  "Bars": ["Titanium Bars","Ancient Bars","Refined Gold Bars","Refined Promethium Bars"],
   "Coins": ["Coins"],
   "Energy": ["Energy"],
   "Resources": ["Lava","Charcoal","Plasma"],
   "Chests": ["Daily Chest","Treasure Chest","Green Treasure Chest"],
-  "Woods": ["Logs","Oak Logs","Willow Logs","Maple Logs","Redwood Logs","Pine Logs","Haunted Logs","Jungle Logs","Lava Logs","Gold Logs","Magic Logs"],
+  "Woods": ["Logs","Oak Logs","Willow Logs","Maple Logs","Redwood Logs","Pine Logs"],
+  "Woods2": ["Haunted Logs","Jungle Logs","Lava Logs","Gold Logs","Magic Logs"],
   "StripedSeeds": ["Striped Green Leaf Seeds","Striped Gold Leaf Seeds","Striped Crystal Leaf Seeds"],
   "BrewingMaterials": ["Red Mushroom","Dotted Green Leaf","Green Leaf","Lime Leaf","Gold Leaf","Crystal Leaf"],
   "StripedLeaves": ["Striped Green Leaf","Striped Gold Leaf","Striped Crystal Leaf"],
@@ -18,18 +20,18 @@ const groups = {"Gems": ["Sapphire","Emerald","Ruby","Diamond","Blood Diamond"],
   "GreenOrbs": ["Charcoal Foundry","Exploring","Metal Detector","Oil Factory"]}
 
 var options = {
-                animationEnabled: true,
-                axisY: {
-                    title: "Total"
-                },
-                toolTip: {
-                    shared: true
-                },
-                legend: {
-                    cursor: "pointer",
-                },
-                data: []
-            };
+    animationEnabled: true,
+    axisY: {
+		title: "Total"
+    },
+    toolTip: {
+		shared: true
+    },
+    legend: {
+	cursor: "pointer",
+    },
+    data: []
+};
 
 function addData(data) {
 	var titleName = data.replace(/([A-Z0-9])/g, ' $1').trim()
@@ -44,17 +46,15 @@ function addData(data) {
         showInLegend: true,
         dataPoints: []
     };
-	
-	
-		$.each(myjson[groups[data][i]], function(index, entry) {
-			dataSeries.dataPoints.push({
-				x: new Date(entry.date),
-                y: entry.units
-            });
+	$.each(myjson[groups[data][i]], function(index, entry) {
+		dataSeries.dataPoints.push({
+			x: new Date(entry.date),
+            y: entry.units
         });
-	
+    });
     options.data.push(dataSeries);
 	}
+	
 	$("#chart"+data).CanvasJSChart(options);
 	options.data = []
 }
