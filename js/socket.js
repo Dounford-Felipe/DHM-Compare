@@ -25,7 +25,7 @@ function getServerIp(serverId)
 		return "wss://dhm.idle-pixel.com:440";
 	}
 }
-
+initWebsocket()
 var clientTicking = false;
 var reconnecting = false;
 function clientTick()
