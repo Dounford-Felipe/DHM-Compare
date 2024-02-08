@@ -62,7 +62,7 @@ function addData(data) {
 	
 
 var myjson;
-$.getJSON("https://panel.magiesugary.site:3000/stats", function(data){
+$.getJSON("https://raw.githubusercontent.com/Dounford-Felipe/DHM-Compare/main/stats/stats.json", function(data){
     myjson = data;
 	addAllCharts();
 	$( ".tabs" ).tabs();
