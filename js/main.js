@@ -791,6 +791,8 @@ function addData() {
 	document.getElementById('greenEmptyOrbp2').innerText = typeof p2greenEmptyOrb == 'undefined' ? 0 :  parseInt(p2greenEmptyOrb).toLocaleString("en-US")
     document.getElementById('blueAxeOrbp1').innerText = typeof p1blueAxeOrb == 'undefined' ? 0 :  parseInt(p1blueAxeOrb).toLocaleString("en-US")
 	document.getElementById('blueAxeOrbp2').innerText = typeof p2blueAxeOrb == 'undefined' ? 0 :  parseInt(p2blueAxeOrb).toLocaleString("en-US")
+    document.getElementById('blueOilOrbp1').innerText = typeof p1blueOilWellOrb == 'undefined' ? 0 :  parseInt(p1blueOilWellOrb).toLocaleString("en-US")
+	document.getElementById('blueOilOrbp2').innerText = typeof p2blueOilWellOrb == 'undefined' ? 0 :  parseInt(p2blueOilWellOrb).toLocaleString("en-US")
     document.getElementById('blueRakeOrbp1').innerText = typeof p1blueRakeOrb == 'undefined' ? 0 :  parseInt(p1blueRakeOrb).toLocaleString("en-US")
 	document.getElementById('blueRakeOrbp2').innerText = typeof p2blueRakeOrb == 'undefined' ? 0 :  parseInt(p2blueRakeOrb).toLocaleString("en-US")
     document.getElementById('blueRakeOrbp1').innerText = typeof p1blueRakeOrb == 'undefined' ? 0 :  parseInt(p1blueRakeOrb).toLocaleString("en-US")
